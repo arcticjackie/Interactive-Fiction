@@ -371,8 +371,7 @@ const messages = [
     },
     {
         id: 20,
-        message: `You feel refueled after eating a home-cooked dinner. You decide to work on homework for a ' +
-                    'few more hours before deciding to go to bed. You`,
+        message: `You feel refueled after eating a home-cooked dinner. You decide to work on homework for a few more hours before deciding to go to bed. You`,
         options: [
             {
                 text: 'Get ready for bed, but stay on your phone for another couple of hours',
