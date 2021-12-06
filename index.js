@@ -121,7 +121,7 @@ const messages = [
     {
         id: 2,
         message: 'You walk to the bathroom and brush your teeth, use the toilet, and wash your face. ' +
-            'You leave the bathroom to You wake up in your room after a restful night’s sleep. You then:',
+            'You leave the bathroom to: ',
         options: [
             {
                 text: 'Go to your room and go on TikTok',
