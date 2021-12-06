@@ -32,11 +32,9 @@ function showMessage(textNodeIndex) {
         })
     }
     else {
-        console.log("HELLO????")
         const visibleText = messages.find(textNode => textNode.id === textNodeIndex)
         messageElement.innerHTML = `You spent ${retrieveProcrastinationCount()} out of ${retrieveTotalSteps()} of your decisions procrastinating. Congrats`,
         console.log(messageElement.innerHTML)
-
 
         while (optionButtonsElement.firstChild) {
             optionButtonsElement.removeChild(optionButtonsElement.firstChild)
@@ -105,7 +103,7 @@ const messages = [
         id: 1,
         message: 'You didn’t know how much time had passed until you happened to ' +
             'see the time and realized that you wasted 2 hours on social media, ' +
-            'feeling worse than how you started. You',
+            'feeling worse than how you started. You:',
         options: [
             {
                 text: 'Continue to go on social media',
@@ -166,7 +164,7 @@ const messages = [
     {
         id: 6,
         message: 'You make a delicious, nutritious breakfast consisting of proteins, fruits, and ' +
-            'toast with a cup of coffee to prepare for a productive day! You',
+            'toast with a cup of coffee to prepare for a productive day! You:',
         options: [
             {
                 text: 'Feel that since you were so productive so far, you deserve to check your phone for a quick second',
@@ -181,7 +179,7 @@ const messages = [
     {
         id: 7,
         message: 'You feel that since you already started the day on a bad foot, you’re not going to do much today anyways. ' +
-            'So, you decide that today is your self-care day and start to play video games. After a couple of hours, you start to feel bored and decide to',
+            'So, you decide that today is your self-care day and start to play video games. After a couple of hours, you start to feel bored and decide to:',
         options: [
             {
                 text: 'Continue to be unproductive',
@@ -195,7 +193,7 @@ const messages = [
     },
     {
         id: 8,
-        message: 'You work for a few hours and then start to get hungry. You',
+        message: 'You work for a few hours and then start to get hungry. You:',
         options: [
             {
                 text: 'Order junk food',
@@ -209,7 +207,7 @@ const messages = [
     },
     {
         id: 9,
-        message: 'That quick second turns into 3 hours on social media, and you immediately realize you are starving. You',
+        message: 'That quick second turns into 3 hours on social media, and you immediately realize you are starving. You:',
         options: [
             {
                 text: 'Order junk food',
@@ -223,7 +221,7 @@ const messages = [
     },
     {
         id: 10,
-        message: 'You are so productive! You work for hours on end and suddenly feel a pang in your stomach saying that you’re hungry. You',
+        message: 'You are so productive! You work for hours on end and suddenly feel a pang in your stomach saying that you’re hungry. You:',
         options: [
             {
                 text: 'Order junk food',
@@ -237,7 +235,7 @@ const messages = [
     },
     {
         id: 11,
-        message: 'After a few more hours of being unproductive, you start to get hungry. You',
+        message: 'After a few more hours of being unproductive, you start to get hungry. You:',
         options: [
             {
                 text: 'Order junk food',
@@ -251,7 +249,7 @@ const messages = [
     },
     {
         id: 12,
-        message: 'You work for a few hours and then start to get hungry. You',
+        message: 'You work for a few hours and then start to get hungry. You:',
         options: [
             {
                 text: 'Order junk food',
@@ -267,7 +265,7 @@ const messages = [
         id: 13,
         message: 'You ordered fast food as you were craving unhealthy foods. ' +
             'After lunch, you feel very lethargic and decide to take a nap. ' +
-            'A couple hours, you wake up even more tired than before. You',
+            'A couple hours, you wake up even more tired than before. You:',
         options: [
             {
                 text: 'Nap for 20 minutes',
@@ -283,7 +281,7 @@ const messages = [
         id: 14,
         message: 'You feel energized after eating a healthy lunch and have the ' +
             'motivation to do work! You work for a couple of hours before hearing ' +
-            'a notification chime on your phone. You',
+            'a notification chime on your phone. You:',
         options: [
             {
                 text: 'Check your phone',
@@ -298,7 +296,7 @@ const messages = [
     {
         id: 15,
         message: 'Oh no! You overslept! You accidentally slept for hours! ' +
-            'It’s now dinner time and you’re hungry from all of that sleeping. You',
+            'It’s now dinner time and you’re hungry from all of that sleeping. You:',
         options: [
             {
                 text: 'Order junk food',
@@ -312,7 +310,7 @@ const messages = [
     },
     {
         id: 16,
-        message: 'You work productively for a few hours and then start to get hungry, you',
+        message: 'You work productively for a few hours and then start to get hungry, you:',
         options: [
             {
                 text: 'Order junk food',
@@ -327,7 +325,7 @@ const messages = [
     {
         id: 17,
         message: 'After checking your one notification, you get sucked into scrolling through Instagram, Twitter, ' +
-            'Facebook, TikTok, and Snapchat. Hours flew by and it is now time for dinner. You',
+            'Facebook, TikTok, and Snapchat. Hours flew by and it is now time for dinner. You:',
         options: [
             {
                 text: 'Order junk food',
@@ -341,7 +339,7 @@ const messages = [
     },
     {
         id: 18,
-        message: 'You work for a few hours. You notice that it’s around the time for dinner, so you',
+        message: 'You work for a few hours. You notice that it’s around the time for dinner, so you:',
         options: [
             {
                 text: 'Order junk food',
@@ -357,7 +355,7 @@ const messages = [
         id: 19,
         message: 'You work for a few hours, and as you didn’t order fast food for lunch, you wanted to order it for ' +
             'dinner as a treat. After dinner, you feel very lethargic, and wish to go to bed. Youew hours. ' +
-            'You notice that it’s around the time for dinner, so you',
+            'You notice that it’s around the time for dinner, so you:',
         options: [
             {
                 text: 'Get ready for bed, but stay on your phone for another couple of hours',
@@ -371,7 +369,7 @@ const messages = [
     },
     {
         id: 20,
-        message: `You feel refueled after eating a home-cooked dinner. You decide to work on homework for a few more hours before deciding to go to bed. You`,
+        message: `You feel refueled after eating a home-cooked dinner. You decide to work on homework for a few more hours before deciding to go to bed. You:`,
         options: [
             {
                 text: 'Get ready for bed, but stay on your phone for another couple of hours',
@@ -385,11 +383,11 @@ const messages = [
     },
     {
         id: 21,
-        message: `You spent ${retrieveProcrastinationCount()} out of ${retrieveTotalSteps()} of your decisions procrastinating. Congrats`,
+        message: `You spent ${retrieveProcrastinationCount()} out of ${retrieveTotalSteps()} of your decisions procrastinating.`,
         // message: 'How many times did you procrastinate or chose not to be productive?',
         options: [
             {
-                text: 'I wanna play again',
+                text: 'Play again?',
                 nextMessageID: -1
             },
             {

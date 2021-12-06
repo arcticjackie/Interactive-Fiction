@@ -16,6 +16,9 @@
   position:relative;
 }
 
+#message {
+  text-align: center;
+}
 
 .btn-grid {
   display: flex;
