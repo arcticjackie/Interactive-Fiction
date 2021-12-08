@@ -398,7 +398,7 @@ const messages = [
     },
     {
         id: 22,
-        message: `You spent ${retrieveProcrastinationCount()} out of ${retrieveTotalSteps()} of your decisions procrastinating. Congrats`,
+        message: `You spent ${retrieveProcrastinationCount()} out of ${retrieveTotalSteps()} of your decisions procrastinating / being lazy.`,
         // message: 'How many times did you procrastinate or chose not to be productive?',
         options: [
             {
