@@ -33,7 +33,7 @@ function showMessage(textNodeIndex) {
     }
     else {
         const visibleText = messages.find(textNode => textNode.id === textNodeIndex)
-        messageElement.innerHTML = `You spent ${retrieveProcrastinationCount()} out of ${retrieveTotalSteps()} of your decisions procrastinating. Congrats`,
+        messageElement.innerHTML = `You spent ${retrieveProcrastinationCount()} out of ${retrieveTotalSteps()} of your decisions procrastinating / being lazy.`,
         console.log(messageElement.innerHTML)
 
         while (optionButtonsElement.firstChild) {
