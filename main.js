@@ -8,6 +8,19 @@ function startGame() {
     showMessage(0)
 }
 
+function playAudio(num) {
+    if (num === 0) {
+        document.getElementById("clapping").play()
+    }
+    if (num === 1) {
+        document.getElementById("aw").play()
+    }
+    if (num ===2) {
+        document.getElementById("woohoo").play()
+    }
+
+}
+
 function showMessage(textNodeIndex) {
     console.log("Procrastination Count: " + retrieveProcrastinationCount())
     console.log("Total Steps Taken: " + retrieveTotalSteps())
@@ -55,6 +68,7 @@ function showMessage(textNodeIndex) {
 function selectOption(option) {
     const nextMessageID = option.nextMessageID
     if (nextMessageID === -1) {
+        playAudio(2)
 
         procrastinationCount = 0,
             totalSteps = 0
@@ -67,7 +81,11 @@ function selectOption(option) {
     // if it is an odd, add it to the procrastination count
     if (nextMessageID % 2 === 1) {
         procrastinationCount++;
+        playAudio(1)
         // procrastinationCount.set(procrastinationCount++)
+    }
+    else {
+        playAudio(0)
     }
     totalSteps++
     // state = Object.assign(state, option.setState)
