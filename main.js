@@ -197,7 +197,7 @@ const messages = [
     {
         id: 7,
         message: 'You feel that since you already started the day on a bad foot, you’re not going to do much today anyways. ' +
-            'So, you decide that today is your self-care day and start to play video games. After a couple of hours, you start to feel bored and decide to:',
+            'So, you decide to play video games. After a couple of hours, you start to feel bored and decide to:',
         options: [
             {
                 text: 'Continue to be unproductive',
