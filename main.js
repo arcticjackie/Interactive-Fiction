@@ -372,8 +372,7 @@ const messages = [
     {
         id: 19,
         message: 'You work for a few hours, and as you didn’t order fast food for lunch, you wanted to order it for ' +
-            'dinner as a treat. After dinner, you feel very lethargic, and wish to go to bed. Youew hours. ' +
-            'You notice that it’s around the time for dinner, so you:',
+            'dinner as a treat. After dinner, you feel very lethargic, and wish to go to bed. You:',
         options: [
             {
                 text: 'Get ready for bed, but stay on your phone for another couple of hours',
