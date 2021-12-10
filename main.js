@@ -79,7 +79,7 @@ function selectOption(option) {
         window.close()
     }
     // if it is an odd, add it to the procrastination count
-    else if (nextMessageID % 2 === 1) {
+    else if (nextMessageID % 2 === 1 && nextMessageID > 0) {
         procrastinationCount++;
         playAudio(1)
         // procrastinationCount.set(procrastinationCount++)
