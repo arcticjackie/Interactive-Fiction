@@ -84,9 +84,6 @@ function selectOption(option) {
         playAudio(1)
         // procrastinationCount.set(procrastinationCount++)
     }
-    else if (nextMessageID === -3) {
-        
-    }
     else {
         playAudio(0)
     }
@@ -427,7 +424,7 @@ const messages = [
             },
             {
                 text: 'Get me out of here',
-                nextMessageID: -3
+                nextMessageID: -2
             }
         ]
     },
