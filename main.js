@@ -22,14 +22,9 @@ function playAudio(num) {
 }
 
 function showMessage(textNodeIndex) {
-    console.log("Procrastination Count: " + retrieveProcrastinationCount())
-    console.log("Total Steps Taken: " + retrieveTotalSteps())
-
     if (textNodeIndex < 21) {
         const visibleText = messages.find(textNode => textNode.id === textNodeIndex)
         messageElement.innerHTML = visibleText.message;
-        console.log(messageElement.innerHTML)
-
 
         while (optionButtonsElement.firstChild) {
             optionButtonsElement.removeChild(optionButtonsElement.firstChild)
@@ -152,7 +147,7 @@ const messages = [
     {
         id: 4,
         message: 'You walk to the bathroom and brush your teeth, use the toilet, and wash your face. ' +
-            'You leave the bathroom to You wake up in your room after a restful night’s sleep. You then:',
+            'You leave the bathroom to:',
         options: [
             {
                 text: 'Go to your room and go on TikTok',
